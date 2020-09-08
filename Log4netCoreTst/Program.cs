@@ -19,7 +19,6 @@ namespace Log4netCoreTst
 
 		private static async Task MainAsync()
 		{
-
 			Console.WriteLine("Log4Net performance test");
 
 			LogComparisonCommon.ILogger mainLogger = new Log4NetFacade(typeof(Program));
@@ -66,7 +65,6 @@ namespace Log4netCoreTst
 					Console.WriteLine(msg);
 				}
 
-
 				{
 					int processorCount = Environment.ProcessorCount;
 					var msg = $"Starting asynchronous Log4Net performance test for {processorCount} running in parallel";
@@ -79,7 +77,6 @@ namespace Log4netCoreTst
 					mainLogger.LogMessage(msg);
 					Console.WriteLine(msg);
 				}
-
 			}
 		}
 	}

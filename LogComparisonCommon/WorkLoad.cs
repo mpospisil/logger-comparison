@@ -25,7 +25,6 @@ namespace LogComparisonCommon
 				}
 			}
 
-
 			stopWatch.Stop();
 			return stopWatch.Elapsed;
 		}
@@ -48,7 +47,6 @@ namespace LogComparisonCommon
 			stopWatch.Stop();
 			return stopWatch.Elapsed;
 		}
-
 
 		public async Task<TimeSpan> DoOneTaskAsync(bool doLog)
 		{
